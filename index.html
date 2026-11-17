@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="InteractVLA turns pretrained vision-language-action policies into geometrically steerable, inspectable tools for agentic robotic manipulation.">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#f5f3ed">
+  <meta name="robots" content="index, follow">
+  <title>InteractVLA — Interactive Tools for Robotic Manipulation</title>
+  <link rel="icon" type="image/png" href="interactvla-icon.png">
+  
+  <meta property="og:title" content="InteractVLA — Turning VLAs into Interactive Tools">
+  <meta property="og:description" content="A bidirectional geometric interface between vision-language agents and pretrained VLA policies. Explore the method, results, and robot demonstrations.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://lingwupro.github.io/InteractVLA/interactvla-logo.png">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="design.css">
+  <script src="app.js" defer></script>
+  <script src="method-demo.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#overview">Skip to content</a>
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="wordmark" href="#top" aria-label="InteractVLA home"><img src="interactvla-logo.png" alt="InteractVLA" width="420" height="90"></a>
+      <div class="nav-links"><a href="#method">Method</a><a href="#results">Results</a><a href="#showcase">Videos <span aria-hidden="true">↗</span></a></div>
+      <a class="paper-link" href="https://openreview.net/pdf?id=ytXuX6Zm6J" target="_blank" rel="noopener noreferrer">Read the paper <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <video id="hero-left" muted loop playsinline preload="none" tabindex="-1"></video>
+        <video id="hero-right" muted loop playsinline preload="none" tabindex="-1"></video>
+      </div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light"><span class="status-dot"></span> AGENTIC ROBOTIC MANIPULATION</p>
+        <h1 id="hero-title"><img src="interactvla-logo.png" alt="InteractVLA" width="840" height="180" fetchpriority="high"></h1>
+        <p class="hero-title">Turning VLAs into <em>Interactive Tools</em> for Agentic Robotic Manipulation</p>
+        <p class="hero-deck">Give the agent a target. &nbsp; Give the policy room to move.</p>
+        <div class="authors"><span>Chen Zhao<sup>1,2,3*</sup></span><span>Zipeng Ye<sup>3*</sup></span><span>Shifeng Bao<sup>1,2</sup></span><span>Yihan Lin<sup>1,2</sup></span><span>Haitao Shen<sup>1,2</sup></span><span>Yining Luo<sup>1</sup></span><span>Yuchen Xie<sup>3</sup></span><span>Jing Zhang<sup>1,2†</sup></span></div>
+        <div class="affiliations"><span><img class="ruc-brand" src="ruc.png" alt="" width="199" height="180">Renmin University of China</span><span><img src="meituan.png" alt="Meituan" width="1896" height="687"></span></div>
+        <div class="hero-actions"><a class="button coral" href="#showcase">Explore the videos <span aria-hidden="true">↗</span></a><a class="hero-text-link" href="#method">How it works <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="hero-bottom"><span>REASON IN GEOMETRY. ACT WITH A VLA.</span><button id="motion-toggle" type="button" aria-pressed="false">Ⅱ Pause previews</button></div>
+    </section>
+    <div class="resource-strip"><span>THE RESEARCH COMPANION</span><div><a href="https://openreview.net/pdf?id=ytXuX6Zm6J" target="_blank" rel="noopener noreferrer">Paper <span>↗</span></a><a href="supplementary-material.pdf" target="_blank" rel="noopener noreferrer">Supplementary material <span>↗</span></a><a href="interactvla-code.zip" target="_blank" rel="noopener noreferrer">Code & setup ZIP <span>↗</span></a></div></div>
+
+    <section class="section showcase" id="showcase" aria-labelledby="showcase-title">
+      <div class="showcase-heading"><div><p class="eyebrow">INTERACTVLA IN ACTION</p><h2 id="showcase-title">See the <em>interaction.</em></h2></div><a class="text-link" href="#demos">Browse every task <span>↗</span></a></div>
+      <div class="showcase-toolbar"><div class="showcase-tabs" role="group" aria-label="Choose video collection">
+        <button type="button" data-collection="real-vla" aria-pressed="true">Agent+VLA <span>Real World</span></button>
+        <button type="button" data-collection="RoboDojo" aria-pressed="false">RoboDojo</button>
+        <button type="button" data-collection="LIBERO-Plus" aria-pressed="false">LIBERO-Plus</button>
+        <button type="button" data-collection="RoboCasa365" aria-pressed="false">RoboCasa365</button>
+        <button type="button" data-collection="real-agent" aria-pressed="false">Agent <span>Real World</span></button>
+      </div></div>
+      <div class="showcase-carousel" role="region" aria-roledescription="carousel" aria-label="Task video highlights">
+        <button class="carousel-arrow previous" id="showcase-prev" type="button" aria-label="Previous three videos" aria-controls="showcase-videos">←</button>
+        <div class="showcase-videos" id="showcase-videos"></div>
+        <button class="carousel-arrow next" id="showcase-next" type="button" aria-label="Next three videos" aria-controls="showcase-videos">→</button>
+      </div>
+      <div class="showcase-footer"><p id="showcase-summary" aria-live="polite"></p><div class="showcase-pagination"><button type="button" id="showcase-motion">Ⅱ Pause videos</button><span id="showcase-page"></span></div></div>
+    </section>
+
+    <section class="section intro" id="overview">
+      <div><p class="eyebrow">01 / THE IDEA</p><h2>A policy the agent<br>can <em>work with.</em></h2></div>
+      <div class="intro-copy"><p class="lead">A language command says what to do. A geometric target helps the policy understand where and how to act.</p><p>When an unfamiliar instruction or a changed scene causes a VLA call to fail, repeating the same command gives the agent little control. InteractVLA opens a two-way interface: the agent steers a pretrained flow-based policy with an end-effector target, then inspects its proposed motion to refine the next action.</p><div class="inline-loop"><span>Specify a target</span><b>→</b><span>Generate motion</span><b>→</b><span>Inspect & refine</span><b>↺</b></div></div>
+    </section>
+
+    <section class="section method" id="method" aria-labelledby="method-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / HOW IT WORKS</p><h2 id="method-title">A two-way conversation<br><em>between intent and action.</em></h2></div><p>The agent specifies an interaction pose. A frozen flow-based VLA proposes a motion. The agent inspects that proposal and decides what comes next.</p></div>
+      <div class="method-loop" aria-label="InteractVLA interaction loop">
+        <div><span class="loop-role">01 · AGENT</span><strong>Specify a target</strong><span>Position · orientation · gripper</span></div><span class="loop-arrow" aria-hidden="true">→</span>
+        <div><span class="loop-role">02 · INTERACTVLA</span><strong>Guide the motion</strong><span>Frozen policy · test-time guidance</span></div><span class="loop-arrow" aria-hidden="true">→</span>
+        <div><span class="loop-role">03 · AGENT</span><strong>Inspect & refine</strong><span>Action chunks · camera reprojections</span></div>
+        <p class="loop-return">↶ Revise the target or adjust the motion. Then continue.</p>
+      </div>
+      <figure class="paper-figure framework-figure"><a href="method-framework.png" target="_blank" rel="noopener noreferrer" aria-label="Enlarge the method framework"><img src="method-framework.png" alt="Paper method: soft-time test-time guidance steers the flow denoising process; action-informed agentic refinement inspects and revises motion proposals." loading="lazy" width="2400" height="700"></a><figcaption><span>THE COMPLETE FRAMEWORK</span><p>Geometric guidance turns a target into input gradients through the action expert. Action-informed refinement returns the generated motion to the agent for the next decision. <a href="method-framework.png" target="_blank" rel="noopener noreferrer">Enlarge ↗</a></p></figcaption></figure>
+
+      <article class="method-detail" id="geometric-guidance">
+        <div class="method-margin"><span class="chapter-number">01</span><span class="handnote">Tell it where.<br>Let it move.</span></div>
+        <div class="method-body"><p class="eyebrow">TEST-TIME GEOMETRIC GUIDANCE</p><h3>Steer a pretrained policy through geometry.</h3><p>At each tool call, the agent supplies an end-effector target <span class="math-inline">G = (p*, R*, w*)</span>: a position, an orientation, and a gripper state. The VLA keeps its learned motor behavior, while guidance redirects its action generation toward that target.</p>
+          <p>During flow denoising, we estimate the clean action chunk, map its native actions to command poses, and compute a complete-pose error at each execution step. Differentiating that objective through the current action expert produces a correction to the noisy action input. The policy weights stay frozen.</p>
+          <div class="equation" aria-label="Clean action estimate">m<sub>t</sub> = x<sub>t</sub> + (1 − t) v<sub>θ</sub>(x<sub>t</sub>, t; c)</div>
+          <aside class="method-aside"><strong>A target can also be rejected.</strong> Guidance is scaled and capped relative to the native flow velocity. If target error or correction demand exceeds the compatibility tolerances, generation stops early and gives control back to the agent for replanning.</aside>
+          <details class="technical-detail"><summary>The guidance update</summary><div class="equation">g<sub>t</sub> = ∇<sub>xₜ</sub> L<sub>t</sub>(C(m<sub>t</sub>), G)<br>x<sub>t+Δt</sub> = sg[x<sub>t</sub> + Δt (v<sub>θ</sub> − B<sub>t</sub>(g<sub>t</sub>))]</div><p>B<sub>t</sub> scales and caps the correction and limits guidance to an interior time window. Each integration state is detached so gradients pass through the current expert only. For bimanual actions, pose errors are summed across effectors at a shared execution index.</p><p>Compatibility is C<sub>t</sub> = exp[−max(r<sub>t</sub>/r<sub>0</sub>, d<sub>t</sub>/d<sub>0</sub>)]. After the first guided step, C<sub>t</sub> &lt; e<sup>−1</sup> triggers early return.</p></details>
+        </div>
+      </article>
+
+      <article class="method-detail" id="soft-time">
+        <div class="method-margin"><span class="chapter-number">02</span><span class="handnote">The right pose,<br>at the right moment.</span></div>
+        <div class="method-body"><p class="eyebrow">SOFT-TIME TARGET ALIGNMENT</p><h3>Choose when to arrive, while generating how.</h3><p>A pose target does not specify its arrival time. Pulling every action step toward it can collapse the approach; fixing the last step imposes a timing choice that may not fit the motion. InteractVLA treats arrival time as a latent index in the action chunk.</p><p>Early in denoising, several compatible execution steps share the guidance. As denoising progresses, the assignment sharpens around the best-matching step. Position, orientation, and gripper state share the same temporal weights, so the policy aligns a complete interaction pose.</p>
+          <figure class="alignment-figure"><img src="soft-time-alignment.png" alt="Paper figure showing soft-time guidance focusing progressively on the compatible action step during denoising." loading="lazy"><figcaption>Soft-time alignment preserves the approach while concentrating guidance on a compatible arrival step.</figcaption></figure>
+          <div class="time-demo" aria-labelledby="time-demo-title"><div class="demo-heading"><div><span class="demo-label">TRY THE IDEA</span><h4 id="time-demo-title">Watch the temporal weights sharpen.</h4></div><span class="handnote">Drag me →</span></div><label for="denoise-time">Denoising progress <output id="denoise-value" for="denoise-time">35%</output></label><input id="denoise-time" type="range" min="5" max="90" value="35" step="1"><div class="weight-bars" id="weight-bars" role="img" aria-label="Illustrative weights over eight execution steps"></div><div class="bar-axis"><span>Approach</span><span>Compatible target pose</span><span>Continue</span></div><p class="demo-note">Conceptual illustration using fixed example pose errors, not a recorded rollout. The actual method recomputes errors as its trajectory changes.</p></div>
+          <details class="technical-detail"><summary>The soft-time objective</summary><div class="equation">τ = 1 − t, &nbsp; β<sub>t</sub> = t² / τ²<br>L<sub>soft</sub> = −τ² log [(1/H) ∑<sub>h</sub> exp(−β<sub>t</sub>E<sub>h</sub>)]<br>q<sub>h</sub>(t) = softmax<sub>h</sub>(−β<sub>t</sub>E<sub>h</sub>)<br>g<sub>t</sub> = tτ ∑<sub>h</sub> q<sub>h</sub>(t) ∇<sub>xₜ</sub>E<sub>h</sub></div><p>The guide objective is L<sub>guide</sub> = (τ/t)L<sub>soft</sub>. Increasing β<sub>t</sub> sharpens the temporal assignment; the tτ factor separately modulates guidance amplitude.</p></details>
+        </div>
+      </article>
+
+      <article class="method-detail" id="action-feedback">
+        <div class="method-margin"><span class="chapter-number">03</span><span class="handnote">Don't just retry.<br>Look, then refine.</span></div>
+        <div class="method-body"><p class="eyebrow">ACTION-INFORMED AGENTIC REFINEMENT</p><h3>Make the motion proposal useful to the agent.</h3><p>A success flag says little about why a motion went wrong. InteractVLA exposes the full action chunk, including the executed prefix and unexecuted continuation, alongside observation history. Calibrated camera reprojections connect predicted command poses to what the agent can see.</p><p>With visual observations and proprioception, the agent can compare the approach direction, orientation, and grasp timing, then choose the recovery that matches the problem.</p>
+          <div class="recovery-routes"><div><span class="route-index">A</span><h4>Revise the target</h4><p>If the intended interaction pose is wrong, update G and call the guided VLA again to generate a new, coherent action chunk.</p></div><div><span class="route-index">B</span><h4>Refine the motion</h4><p>If the maneuver is already useful, adjust an approach offset, lift height, or gripper-release timing through local robot-control tools.</p></div></div>
+          <p class="method-takeaway">Geometry guides the policy.<br><em>The policy’s motion guides the agent’s next decision.</em></p>
+        </div>
+      </article>
+      <div class="rsi-note"><span class="handnote">And across attempts?</span><div><h3>Turn successful interactions into reusable strategies.</h3><p>Recursive self-improvement uses practice environments with distinct seeds and scene layouts. The agent consolidates effective target specifications and motion corrections, then transfers those strategies to held-out evaluation instances. This is a separate setting from the online interaction loop above.</p></div></div>
+    </section>
+
+    <section class="results-band" id="results"><div class="section">
+      <div class="section-heading"><div><p class="eyebrow">03 / FROM INTERACTION TO IMPROVEMENT</p><h2>Better tools.<br><em>Stronger strategies.</em></h2></div><p>With recursive self-improvement (RSI), the agent consolidates effective target specifications and motion corrections, then transfers them to held-out instances.</p></div>
+      <p class="result-setting"><span class="status-dot"></span> INTERACTVLA + RSI · OVERALL SUCCESS RATE</p>
+      <div class="stats">
+        <article><div class="stat-number">99.4<span>%</span></div><h3>LIBERO-Plus</h3><p>Robustness across visual,<br>language, and spatial shifts.</p><small>Main paper · Table 3</small></article>
+        <article><div class="stat-number">48.62<span>%</span></div><h3>RoboDojo</h3><p>Bimanual manipulation and<br>diverse generalization tasks.</p><small>Main paper · Table 4</small></article>
+        <article><div class="stat-number">89.4<span>%</span></div><h3>RoboCasa365</h3><p>Atomic and composite tasks<br>across kitchen environments.</p><small>Main paper · Table 5</small></article>
+      </div>
+      <p class="result-note">Reported with the MR-0 backbone. LIBERO-Plus uses GPT-6.1 Sol; RoboDojo and RoboCasa365 RSI use GPT-6 Astra. These RSI results are distinct from online tool use below.</p>
+      <div class="online-results"><div><span class="eyebrow">ONLINE TOOL USE</span><h3>Geometry helps on the first loop, too.</h3><p>Language-only Agent + VLA → Agent + InteractVLA<br><span>GPT-6.1 Sol + MR-0 · overall success rate</span></p></div><div class="online-pair"><span>LIBERO-Plus</span><p>93.1% <b>→</b> <strong>98.3%</strong></p></div><div class="online-pair"><span>RoboDojo</span><p>18.0% <b>→</b> <strong>26.0%</strong></p></div></div>
+      <div class="research-results" id="result-tables" aria-labelledby="table-section-title">
+        <div class="table-section-heading"><div><p class="eyebrow">THE EXPERIMENTS</p><h3 id="table-section-title">Results, in detail.</h3></div><p>Explore the paper and selected published baselines.<br>Select a metric to change the ranking.</p></div>
+        <div class="result-tabs" role="group" aria-label="Choose results benchmark">
+          <button type="button" data-table="table-3" aria-pressed="true">LIBERO-Plus</button><button type="button" data-table="table-4" aria-pressed="false">RoboDojo</button><button type="button" data-table="table-5" aria-pressed="false">RoboCasa365</button><button type="button" data-table="table-6" aria-pressed="false">Real World</button>
+        </div>
+        <div class="leaderboard-panel">
+          <div class="leaderboard-toolbar"><div><h4 id="result-table-title"></h4><p id="result-table-scope"></p></div><div class="table-sort-controls"><label for="result-sort">Sort by <select id="result-sort"></select></label><button id="result-direction" type="button" aria-label="Switch to ascending order">↓</button></div></div>
+          <div class="table-scroll-hint">Swipe to compare all metrics <span>↔</span></div>
+          <div class="results-scroll" role="region" aria-label="Sortable paper results" tabindex="0"><table id="paper-results-table"></table></div>
+          <div class="table-bottom"><span id="result-sort-status" aria-live="polite"></span><button type="button" id="result-reset">↺ Default order</button><a href="https://openreview.net/pdf?id=ytXuX6Zm6J" target="_blank" rel="noopener noreferrer" id="result-paper-link">Read the paper ↗</a></div>
+        </div>
+        <p class="table-protocol" id="result-table-note"></p>
+      </div>
+    </div></section>
+
+    <section class="section physical">
+      <div class="section-heading"><div><p class="eyebrow">04 / PHYSICAL INTERACTION</p><h2>Beyond the<br><em>simulation.</em></h2></div><p>Tabletop tidying, bottle reorientation, water pouring, and cube placement on the Dexmal platform.</p></div>
+      <div class="physical-grid"><div class="physical-video"><video id="physical-video" controls muted playsinline preload="none" aria-label="Real-world water pouring with Agent plus VLA"></video><span>WATER POURING / AGENT+VLA</span></div><div class="physical-copy"><span class="eyebrow">REAL-WORLD EVALUATION</span><h3>Reason, manipulate,<br>and recover.</h3><p>Geometric targets connect the agent’s intent to the policy’s learned motor behavior. On the paper’s four physical tasks, InteractVLA improves task score over language-only Agent + VLA.</p><p class="subtle">The paper reports normalized task scores, rather than binary success rates, over 30 trials per method and task.</p><a class="text-link" href="#demos" id="real-world-shortcut">Explore the real-world videos <span>↗</span></a></div></div>
+      <figure class="efficiency-figure"><div><span class="eyebrow">SUCCESS & EFFICIENCY</span><h3>Make each interaction count.</h3><p>Success, token cost, and elapsed time across the three simulated benchmarks. Costs include all RSI attempts, including retries.</p></div><a href="efficiency.png" target="_blank" rel="noopener noreferrer"><img src="efficiency.png" alt="Paper figure comparing success rate, normalized token cost, and normalized time for Agent, Agent plus VLA, and Agent plus InteractVLA." width="3892" height="1125" loading="lazy"></a><figcaption>Cost axes are logarithmic and normalized to Agent + VLA. Time includes agent latency, VLA inference and guidance, and environment execution. Main paper, Figure 7.</figcaption></figure>
+    </section>
+
+    <section class="explorer" id="demos" aria-labelledby="explorer-title"><div class="section">
+      <div class="section-heading"><div><p class="eyebrow light">05 / WATCH IT WORK</p><h2 id="explorer-title">The video <em>explorer.</em></h2></div><p>Choose an environment. Pick a task.<br>See the interaction unfold.</p></div>
+      <div class="suite-tabs" role="group" aria-label="Choose environment">
+        <button type="button" data-suite="LIBERO-Plus" aria-pressed="true">LIBERO-Plus <span></span></button><button type="button" data-suite="RoboDojo" aria-pressed="false">RoboDojo <span></span></button><button type="button" data-suite="RoboCasa365" aria-pressed="false">RoboCasa365 <span></span></button><button type="button" data-suite="Real World" aria-pressed="false">Real World <span></span></button>
+      </div>
+      <div class="explorer-controls"><label class="task-control" for="task-select"><span>TASK</span><select id="task-select"></select></label><label class="method-control" for="method-select" hidden><span>METHOD</span><select id="method-select"></select></label><div class="task-nav"><button id="prev-task" type="button" aria-label="Previous task">←</button><button id="next-task" type="button" aria-label="Next task">→</button></div></div>
+      <div class="player-heading"><h3 id="selected-task"></h3><p id="task-meta" aria-live="polite"></p></div>
+      <div id="players" class="players"></div>
+      <div class="playback-toolbar"><button type="button" id="play-all">▶ Play</button><button type="button" id="restart-all">↺ Restart</button><label for="playback-speed">Speed <select id="playback-speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option><option value="4">4×</option></select></label><span id="playback-note"></span></div>
+      <div class="browse-heading"><span>MORE TASKS IN <b id="browse-suite">LIBERO-PLUS</b></span><span id="task-counter"></span></div><div id="task-grid" class="task-grid"></div>
+      <noscript><p class="no-script">Enable JavaScript to use the video selector. Video files are included with this website.</p></noscript>
+    </div></section>
+    <section class="section citation-section" id="citation"><div class="citation-heading"><h2>Citation</h2><button class="copy-citation" id="copy-citation" type="button">Copy BibTeX</button></div>
+      <pre id="bibtex">@misc{zhao2026interactvla,
+  title = {Turning VLAs into Interactive Tools for Agentic Robotic Manipulation},
+  author = {Chen Zhao and Zipeng Ye and Shifeng Bao and Yihan Lin and
+            Haitao Shen and Yining Luo and Yuchen Xie and Jing Zhang},
+  year = {2026},
+  url = {https://openreview.net/forum?id=ytXuX6Zm6J}
+}</pre><p class="copy-status" id="copy-status" aria-live="polite"></p>
+    </section>
+  </main>
+  <footer><a class="wordmark" href="#top" aria-label="InteractVLA home"><img src="interactvla-logo.png" alt="InteractVLA" width="420" height="90"></a><p>Turning VLAs into Interactive Tools for Agentic Robotic Manipulation</p><a href="#top">Back to top ↑</a></footer>
+
+</body>
+</html>
