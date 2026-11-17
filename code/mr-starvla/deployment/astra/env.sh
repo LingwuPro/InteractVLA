@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+unset LD_PRELOAD
+ASTRA_REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+ASTRA_WORKSPACE="$(dirname "$ASTRA_REPO")"
+ASTRA_RUN="${ASTRA_RUN:-$ASTRA_REPO/work_dirs/astra_deploy}"
+export KEYPOINT_FLOW_WORKSPACE="${KEYPOINT_FLOW_WORKSPACE:-$ASTRA_WORKSPACE}"
+export KEYPOINT_FLOW_SKILLS="${KEYPOINT_FLOW_SKILLS:-$ASTRA_WORKSPACE/../skills}"
+ASTRA_ACTIVATE="${ASTRA_ACTIVATE:-$ASTRA_WORKSPACE/miniconda/bin/activate}"
+STARVLA_ENV="${STARVLA_ENV:-$ASTRA_WORKSPACE/envs/starvla}"
+PI05_ENV="${PI05_ENV:-$ASTRA_WORKSPACE/conda_env/astra_pi05}"
+STARVLA_CHECKPOINT="${STARVLA_CHECKPOINT:-$ASTRA_WORKSPACE/models/starvla/pytorch_model.pt}"
+OPENPI_ROOT="${OPENPI_ROOT:-$ASTRA_RUN/repos/openpi}"
+export ASTRA_REPO ASTRA_WORKSPACE ASTRA_RUN ASTRA_ACTIVATE OPENPI_ROOT PI05_ENV STARVLA_ENV STARVLA_CHECKPOINT
+export PYTHONDONTWRITEBYTECODE=1 PYTHONNOUSERSITE=1 PYTHONUNBUFFERED=1 DEBUG_MODE=1
+export HF_HOME="$ASTRA_RUN/cache/huggingface" OPENPI_DATA_HOME="$ASTRA_RUN/cache/openpi"
+export XDG_CACHE_HOME="$ASTRA_RUN/cache"
+export HF_HUB_CACHE="$HF_HOME/hub" HUGGINGFACE_HUB_CACHE="$HF_HOME/hub"
+export HF_ASSETS_CACHE="$HF_HOME/assets" HF_MODULES_CACHE="$HF_HOME/modules"
+export TORCH_HOME="$XDG_CACHE_HOME/torch" NUMBA_CACHE_DIR="$XDG_CACHE_HOME/numba"
+export MPLCONFIGDIR="$XDG_CACHE_HOME/matplotlib"
+unset TRANSFORMERS_CACHE PYTHONPYCACHEPREFIX
+export TMPDIR="/tmp/astra-work_dirs-$(id -u)"
+export WARP_CACHE_PATH="$TMPDIR/warp" TORCHINDUCTOR_CACHE_DIR="$TMPDIR/torchinductor"
+export TRITON_CACHE_DIR="$TMPDIR/triton" CUDA_CACHE_PATH="$TMPDIR/cuda"
+export TORCH_EXTENSIONS_DIR="$TMPDIR/torch_extensions"
+export JAX_COMPILATION_CACHE_DIR="$TMPDIR/jax"
+export TOKENIZERS_PARALLELISM=false OMP_NUM_THREADS=4
+mkdir -p "$TMPDIR" "$ASTRA_RUN/logs" "$XDG_CACHE_HOME"
+
+astra_activate() {
+    set +u
+    source "$ASTRA_ACTIVATE" "$1"
+    set -u
+    unset PYTHONPATH PYTHONHOME
+}
+
+astra_offline() {
+    unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY ALL_PROXY all_proxy
+    export HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1
+}
+
+astra_proxy() {
+    export http_proxy="${DOWNLOAD_PROXY:-}" https_proxy="${DOWNLOAD_PROXY:-}"
+    export HTTP_PROXY="$http_proxy" HTTPS_PROXY="$https_proxy"
+}

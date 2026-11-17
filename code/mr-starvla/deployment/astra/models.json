@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "starvla_50k": {
+    "framework": "QwenMMDiTMemory",
+    "vlm": "Qwen3.5-4B",
+    "checkpoint_relative_to_repo": "starvla_data/results/Checkpoints/robotwin_mem_mot_query_perceiver_hier_vision_pre430k_h50/checkpoints/steps_50000_pytorch_model.pt",
+    "source_relative_to_workspace": "mr05_memory",
+    "port": 18100,
+    "action_shape": [50, 14],
+    "action_codec": "robotwin_aloha_agilex_absolute_qpos_left6_gripper_right6_gripper",
+    "gripper_range": [0, 1],
+    "history_mode": "action_frame_v1",
+    "native_benchmark": "robotwin",
+    "keypoint_conditioning_trained": false,
+    "confidence_readout_trained": false
+  },
+  "pi05_libero": {
+    "upstream_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+    "checkpoint_relative_to_run": "models/checkpoints/pi05_libero",
+    "upstream_config": "pi05_libero",
+    "port": 18101,
+    "action_shape": [10, 7],
+    "state_dimension": 8,
+    "action_codec": "libero_native_panda_delta_eef_axis_angle_gripper",
+    "native_benchmarks": ["libero", "libero_plus"],
+    "keypoint_conditioning_trained": false,
+    "confidence_readout_trained": false
+  },
+  "pi05_base": {
+    "upstream_commit": "215abfb217dbac7d5f1273282331b9b1866c0479",
+    "checkpoint_relative_to_run": "models/checkpoints/pi05_base",
+    "upstream_config": "pi05_aloha_pen_uncap",
+    "port": 18102,
+    "action_shape": [50, 14],
+    "action_codec": "upstream_trossen_aloha_joint_and_gripper_adapter",
+    "requires_explicit_prompt": true,
+    "native_benchmarks": [],
+    "keypoint_conditioning_trained": false,
+    "confidence_readout_trained": false
+  },
+  "cross_embodiment": {
+    "status": "requires_codec_adaptation_and_training",
+    "forbidden_shortcut": "Slicing or padding dimensions does not convert robot kinematics or controller semantics."
+  }
+}

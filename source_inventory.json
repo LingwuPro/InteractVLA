@@ -1,0 +1,1272 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 7268,
+    "sha256": "9d1815c92e1310837c4cf5fa253e5f5b53d3df4d045151a113acffca6077e80c"
+  },
+  {
+    "path": "code/interactvla/__init__.py",
+    "bytes": 107,
+    "sha256": "44d35bbb82fd05a3ae7150aa825288523db1eb0ab06ff4c7907c50a88d3d8ae8"
+  },
+  {
+    "path": "code/interactvla/cli.py",
+    "bytes": 2095,
+    "sha256": "af3d2616fdfda5ac335e60819ddb1743cf3c7277f18ff671301fc995320d068c"
+  },
+  {
+    "path": "code/interactvla/feedback.py",
+    "bytes": 11610,
+    "sha256": "f37f503ced7598769f49d518e36ae74955f3f051bc3e50c3faaf90845ec210f1"
+  },
+  {
+    "path": "code/interactvla/geometry.py",
+    "bytes": 21475,
+    "sha256": "ee7746ca972d4bcb887815925c0a7e4401900ce9809a3685925b78b7a18d48d3"
+  },
+  {
+    "path": "code/interactvla/jax_backend.py",
+    "bytes": 11244,
+    "sha256": "7626550ab001d860c9ba84f2701097e399f2ed9b3a32e3754250a04d4ee426e8"
+  },
+  {
+    "path": "code/interactvla/models.py",
+    "bytes": 8606,
+    "sha256": "4ccf6ba2764610366a4ba1a7064644ae359bb92db4757554f98dd05b85dc2dff"
+  },
+  {
+    "path": "code/interactvla/runtime.py",
+    "bytes": 19349,
+    "sha256": "b5db1fbe9e02426f6dbf2f70c602768e73df064544194b44ba9bb81d4c49bef4"
+  },
+  {
+    "path": "code/interactvla/sampling.py",
+    "bytes": 8590,
+    "sha256": "bc006b5ca727074d9b98a96d8ac2d0b548af18b769d9978d7440d331df8bfcf9"
+  },
+  {
+    "path": "code/mr-starvla/LICENSE",
+    "bytes": 1387,
+    "sha256": "6ca01970c4e66d2d5bebd0a00b55de5b4081017e0f0c97ddb415cda28e3e8ffa"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/README.txt",
+    "bytes": 4796,
+    "sha256": "8f05b62b6ac9c0865ba340b146fac8bc73337a17d481b97f725dd88e469c2a2a"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/bootstrap_pi05.sh",
+    "bytes": 787,
+    "sha256": "53f67d328e627caebfe0f9c516a6cd70ab53e54b336632b5b957c2d93e1f6e0a"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/configure.sh",
+    "bytes": 1667,
+    "sha256": "74e109336942f1190a8da4a438be7187c418de24d5b6e2908cc0cb1285d077db"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/download_pi05.py",
+    "bytes": 3357,
+    "sha256": "dc8a7004b3be39f9683633a6497b34cb744f46c6c1f5a7f889065ba48c255fd4"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/env.sh",
+    "bytes": 2194,
+    "sha256": "b13332e708d811c40405d03e92afa11aa49bf940d2311f8426e000c89551400a"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/models.json",
+    "bytes": 1811,
+    "sha256": "d9d6ac2c2e162bfcfc3d380f28a08b323004cbbcf20f001894d60a667f3180b7"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/pi05-requirements.lock.txt",
+    "bytes": 4283,
+    "sha256": "a970db2174598b10fa9781c054c18fd960e9af02f70551c91008f0d5181349e1"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/policy_client.py",
+    "bytes": 1037,
+    "sha256": "48b2f1321adbd75f6f112054332944aa29f8de40bd0a21df5e73f8e9bd5c2bf9"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/run_sim.sh",
+    "bytes": 987,
+    "sha256": "b17fc62f22cb50617fecf679b1c7652c9bcd8d142f947bab863d764bb8bd90cc"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/serve.sh",
+    "bytes": 1440,
+    "sha256": "a33086633466227f44a99889c85bbd16d34684e131950c90bdf34fb94936a5b4"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/service.sh",
+    "bytes": 1547,
+    "sha256": "ef19344cbd4128cfd5ffe52be35c113310b32f76a71cafb437d6a0b0841800ad"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/sim_env.sh",
+    "bytes": 1764,
+    "sha256": "7385bb313b59938f77a03806ff0ece1ffa03be28ff14df7d95a3dc60d803fda1"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/smoke_libero.py",
+    "bytes": 3468,
+    "sha256": "d029d0a52dfc4e2aed568285c13c4ab3d3a59e5eb93ddee151165f289d970e0b"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/smoke_pi05.py",
+    "bytes": 2150,
+    "sha256": "4afc29613b39858d17f17eb5fecbd7310fc7ea6fd65013e1655e7520c3de28cc"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/smoke_robotwin.py",
+    "bytes": 3067,
+    "sha256": "575fb11fad8d41de47e63ea066e1b6692588e34f1b55beb24b4c56e3b85d7bf5"
+  },
+  {
+    "path": "code/mr-starvla/deployment/astra/smoke_simpler.py",
+    "bytes": 2772,
+    "sha256": "8452c0e4a40142918ea8cfb8efb661579d9a8d443737d33579ec2a9e23f679c0"
+  },
+  {
+    "path": "code/mr-starvla/deployment/model_server/tools/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "code/mr-starvla/deployment/model_server/tools/debug_server_policy.py",
+    "bytes": 3713,
+    "sha256": "fa8be81d39441324c0eb33da517b6cda17d8fd49f26ad5bcaf91a434fa1e37c9"
+  },
+  {
+    "path": "code/mr-starvla/deployment/model_server/tools/image_tools.py",
+    "bytes": 4765,
+    "sha256": "ea839b396072667eb0a1c723bfcc93e1e25886e4dd2d49c84302cc1ef262c186"
+  },
+  {
+    "path": "code/mr-starvla/deployment/model_server/tools/msgpack_numpy.py",
+    "bytes": 1944,
+    "sha256": "c04568948fcee52b691e3be4b6cffb759f7e79ad67530fcd5d23095a0d13c057"
+  },
+  {
+    "path": "code/mr-starvla/deployment/model_server/tools/websocket_policy_client.py",
+    "bytes": 3002,
+    "sha256": "ffee68976c4e72c2467bfb88c079f06385eecf2134f4c80b99cb7d5c2d9d4ae2"
+  },
+  {
+    "path": "code/mr-starvla/deployment/model_server/tools/websocket_policy_server.py",
+    "bytes": 5935,
+    "sha256": "973848ab9f39092e984e6bd54be28d226de4b8834cf92ca3fff1d8b381a25a88"
+  },
+  {
+    "path": "code/mr-starvla/examples/KeypointFlow/README.txt",
+    "bytes": 586,
+    "sha256": "940ff325005da6f9ffeef07409934c2d02aed5be018c3800fad9ab030e77fb20"
+  },
+  {
+    "path": "code/mr-starvla/examples/KeypointFlow/dexmal.json",
+    "bytes": 453,
+    "sha256": "97b4fe9c7bf00b7b53df0ed07c105ec1a7bac382fd4612f0e278936132d17b95"
+  },
+  {
+    "path": "code/mr-starvla/examples/KeypointFlow/libero.json",
+    "bytes": 453,
+    "sha256": "5a092f466eb573f65e60cab87d371ed22ffcdaae272723e387587d5f2a3bed27"
+  },
+  {
+    "path": "code/mr-starvla/examples/KeypointFlow/robocasa365.json",
+    "bytes": 455,
+    "sha256": "4afd8fd51594d0dcb25452832b016af99f44f58cba55e8035ec2abe8a9e04d23"
+  },
+  {
+    "path": "code/mr-starvla/examples/KeypointFlow/robodojo.json",
+    "bytes": 455,
+    "sha256": "4afd8fd51594d0dcb25452832b016af99f44f58cba55e8035ec2abe8a9e04d23"
+  },
+  {
+    "path": "code/mr-starvla/examples/KeypointFlow/run.sh",
+    "bytes": 801,
+    "sha256": "0ce4b95c6b582e21fab28e56a0c135db8f4e69e8b635ac6bfa784f5421f266a9"
+  },
+  {
+    "path": "code/mr-starvla/examples/KeypointFlow/service.sh",
+    "bytes": 1786,
+    "sha256": "a24e3abf993c7155ecf1b34aeba54cd803b5ba2723bb1a81d8dc2defc5ee4f9e"
+  },
+  {
+    "path": "code/mr-starvla/starVLA/__init__.py",
+    "bytes": 153,
+    "sha256": "fed454f6dad4c8a5d12c5ec34bb77a9c7b1efa4ffc9597e0384f516e2e093d65"
+  },
+  {
+    "path": "code/mr-starvla/starVLA/config/deepseeds/deepspeed_zero2.yaml",
+    "bytes": 259,
+    "sha256": "70504a0eeb160c0e2244d8e6371d69d753b2b67cc26d9f03c23fbc8d2861087d"
+  },
+  {
+    "path": "code/mr-starvla/starVLA/config/deepseeds/ds_config.yaml",
+    "bytes": 566,
+    "sha256": "dbdc6b4a8714d150adb37c9e8d68c580ce603799c81bb7e84bfd9eadc66a8f56"
+  },
+  {
+    "path": "code/mr-starvla/starVLA/keypoint_flow/__init__.py",
+    "bytes": 57,
+    "sha256": "afcaa5a9871e7ed1fef07d52cf0fa246c277fa68ffeaabc2ab91e40db9ca428e"
+  },
+  {
+    "path": "code/mr-starvla/starVLA/keypoint_flow/check_paths.py",
+    "bytes": 2263,
+    "sha256": "6ae9a37fe533e26bbb35084d8137ff99d1edb0f22eb10fb825219c25aea45f42"
+  },
+  {
+    "path": "code/mr-starvla/starVLA/keypoint_flow/confidence.py",
+    "bytes": 62,
+    "sha256": "b85530c3efd552f85a7b14817ecdab415e824cd5e9ea83e7ff69f013ed0c9bff"
+  },
+  {
+    "path": "code/mr-starvla/starVLA/keypoint_flow/evaluate_gt_libero.py",
+    "bytes": 7467,
+    "sha256": "667afddaad9ae1227a11e07d8127f1d93ee7f7d76fc0865b044a69a3a219cda4"
+  },
+  {
+    "path": "code/mr-starvla/starVLA/keypoint_flow/geometry.py",
+    "bytes": 767,
+    "sha256": "a7d8fa51308a7032818aace66a33215249f2ddf5a8665db77cdf8dbd855ca9eb"
+  },
+  {
+    "path": "code/mr-starvla/starVLA/keypoint_flow/gt_libero.py",
+    "bytes": 1905,
+    "sha256": "956a11d0e8561169cdf80b5740762f40feab1918b192338cf30b56c5ba443406"
+  },
+  {
+    "path": "code/mr-starvla/starVLA/keypoint_flow/libero_control.py",
+    "bytes": 4479,
+    "sha256": "00eef29e2c8592258b76fb8a7f7a9e858acd6fb0b050272f4437dbf820b7ea48"
+  },
+  {
+    "path": "code/mr-starvla/starVLA/keypoint_flow/protocol.py",
+    "bytes": 93,
+    "sha256": "b113709a6e08ddf31ae35192dee8c6c9f4ff053650755b3b18e625e6de50cde1"
+  },
+  {
+    "path": "code/mr-starvla/starVLA/keypoint_flow/runtime.py",
+    "bytes": 75,
+    "sha256": "8c13f07e76c5f20ad5871c3bff4370b12aae265acc0d1e3cff6a754687bcf7ab"
+  },
+  {
+    "path": "code/mr-starvla/starVLA/keypoint_flow/sampler.py",
+    "bytes": 146,
+    "sha256": "24dc52e515d1136e79946399684c39ca11db82cc44702e11014aab289dea4dde"
+  },
+  {
+    "path": "code/mr-starvla/starVLA/keypoint_flow/serve_pi05.py",
+    "bytes": 79,
+    "sha256": "ffbbdfdbce58b4857052af83a52434540c7e61d4e6efd48aa9eb97bde57ad5d5"
+  },
+  {
+    "path": "code/mr-starvla/starVLA/keypoint_flow/serve_starvla.py",
+    "bytes": 82,
+    "sha256": "32aee137709903d6fc745542aa30a56041fffefba8909cadb156c561e0155a95"
+  },
+  {
+    "path": "code/mr-starvla/tests/keypoint_flow/test_paths.py",
+    "bytes": 1384,
+    "sha256": "4d307f03bcb7b9b51cee8f26778da35198d21c0431ad584ba6d1177a3a0de630"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_dynamic_guidance/evaluate.py",
+    "bytes": 46639,
+    "sha256": "f4ded788eae36aaa03ee930de29894af8c160c4599d7df88c0a6d59cfa9dfa32"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_dynamic_guidance/geometry.py",
+    "bytes": 5348,
+    "sha256": "36c46f0ecf41035de48fe92529076e9c2a9110376b427a41616e8e53a0396739"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_dynamic_guidance/native_finish_caps/render_probe/fast_glass.py",
+    "bytes": 4411,
+    "sha256": "7fafbe9c9e3fe2a80bf11eac64361cb1592e28b1d9b3be7bec1d53cc3ea8a2e7"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_dynamic_guidance/online_tool/agent_queue.py",
+    "bytes": 12228,
+    "sha256": "c92646bab0e6603f351b4859623f7049b8f83bb7a94b2945f75d4b3987496b62"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_dynamic_guidance/online_tool/robot_initial_queue.py",
+    "bytes": 6807,
+    "sha256": "1f405fa0d881d071dcd6dd7ed9000f1c9243aaf19ffd3bd97e901099057ae965"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_dynamic_guidance/online_tool/run_full.py",
+    "bytes": 21536,
+    "sha256": "a79237b38695b96dad66cf06b7a0a92d48ba67ce5331ef76e7af2bb70bb858ef"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_dynamic_guidance/online_tool/tool.py",
+    "bytes": 27506,
+    "sha256": "ddb617c67e55bfc371a2395a51902c6f28e697a17a469db88e7224af976e6a05"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_dynamic_guidance/recorded_reference_audit/recover_commands.py",
+    "bytes": 5850,
+    "sha256": "7acf51738b30e2b4087fd8975cf30bb471ec7a0f03eb2f58b8b008d88e48ae3e"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_dynamic_guidance/sampler.py",
+    "bytes": 2462,
+    "sha256": "850d639b7d8a3973c8fa47b68454458f1ae2e9b221ba7077f8083b76c2161e29"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_dynamic_guidance/server.py",
+    "bytes": 10897,
+    "sha256": "86512ce71ff8bddca4fe6baef890652650e9ae3459a569e6053b77c2024a9185"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_dynamic_guidance/supervise.py",
+    "bytes": 10936,
+    "sha256": "4b7af04a94ca3d195737c3f576cead210413fc37be2521b855e031f16b8121bf"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_dynamic_guidance/validate.py",
+    "bytes": 372,
+    "sha256": "247c748db5fc7d4d3bb47d538bb9924bfd0097f9a6968e720a24b6f483362d98"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_naive_guidance/evaluate.py",
+    "bytes": 12552,
+    "sha256": "88fa03be3ab8f193a2f8a6f0c2aca9ebeafe4099217f402ab840f6794db7040d"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_naive_guidance/geometry.py",
+    "bytes": 3333,
+    "sha256": "0fa2e43815ee38a5cbe964751317849fe7440b21e1712abc9f018c2b4b295a3a"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_naive_guidance/sampler.py",
+    "bytes": 5298,
+    "sha256": "6bdab4fa64272e4886455557a58e7ccb138b443f80a43fc00e7e76119a2dd5cd"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_naive_guidance/server.py",
+    "bytes": 8091,
+    "sha256": "c320affa7f4fadcc9176251a5bf8152b0ea6b95b95452d5d3ff4844860e988a0"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_naive_guidance/validate.py",
+    "bytes": 4226,
+    "sha256": "dd4be405d1af9999aa7374f55ff9f09f004cec17e64e8e43466871bcf667124a"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_native_noise/evaluate.py",
+    "bytes": 16772,
+    "sha256": "b8c158794d9934b4817e41eab7d4d40878bff6f3f6180c5a766fa7a240516daf"
+  },
+  {
+    "path": "code/mr-starvla/work_dirs/keypoint_flow/evaluation/pi05_native_noise/server.py",
+    "bytes": 9456,
+    "sha256": "3fb68528b2c56a9d92c99c96c5415d2c60ad09fcf3212aea93b4989bdc73b52a"
+  },
+  {
+    "path": "code/release_paths.py",
+    "bytes": 869,
+    "sha256": "9cac6be7bb1b4609acdfe997220d71279c53d3d3369342caf8250049e3fd7a79"
+  },
+  {
+    "path": "code/robocasa365_starvla/deployment/model_server/tools/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "code/robocasa365_starvla/deployment/model_server/tools/debug_server_policy.py",
+    "bytes": 3713,
+    "sha256": "fa8be81d39441324c0eb33da517b6cda17d8fd49f26ad5bcaf91a434fa1e37c9"
+  },
+  {
+    "path": "code/robocasa365_starvla/deployment/model_server/tools/image_tools.py",
+    "bytes": 4765,
+    "sha256": "ea839b396072667eb0a1c723bfcc93e1e25886e4dd2d49c84302cc1ef262c186"
+  },
+  {
+    "path": "code/robocasa365_starvla/deployment/model_server/tools/msgpack_numpy.py",
+    "bytes": 1944,
+    "sha256": "c04568948fcee52b691e3be4b6cffb759f7e79ad67530fcd5d23095a0d13c057"
+  },
+  {
+    "path": "code/robocasa365_starvla/deployment/model_server/tools/websocket_policy_client.py",
+    "bytes": 3002,
+    "sha256": "ffee68976c4e72c2467bfb88c079f06385eecf2134f4c80b99cb7d5c2d9d4ae2"
+  },
+  {
+    "path": "code/robocasa365_starvla/deployment/model_server/tools/websocket_policy_server.py",
+    "bytes": 5935,
+    "sha256": "973848ab9f39092e984e6bd54be28d226de4b8834cf92ca3fff1d8b381a25a88"
+  },
+  {
+    "path": "code/robocasa365_starvla/examples/RoboCasa365/eval/native12_policy.py",
+    "bytes": 34252,
+    "sha256": "c01783e8d9f86a1352bb90046760795a9003ed2842b4aed8551514b7c62e5476"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/attempt_budget.py",
+    "bytes": 5395,
+    "sha256": "918f1afac42513171c5133ca54af1d6cbf301a9d06b70fcbb346610c44dba992"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/campaign.py",
+    "bytes": 3606,
+    "sha256": "b107dbbb05fb3c0588e143a9758824c09458846a2cd8843d436a45b4e106b1b9"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/check_reset_render.py",
+    "bytes": 2453,
+    "sha256": "28c6224a043fde00692030afa2b6dc883767f9ad3ba98164fa5f9dc27f9e0f7d"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/control.py",
+    "bytes": 4154,
+    "sha256": "eeb802cf9b6d25493634dfa29e4e97cc4e5464a8fe2e19ce2d54efc4e729238a"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/guidance.py",
+    "bytes": 5476,
+    "sha256": "81a39e3c72b3e500280c6a7fd02f4ea26f33aee7467cd95d7ea10c696ae16e5e"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/migrate_soft_time.py",
+    "bytes": 12450,
+    "sha256": "234e574dd91aefe3aec9589ac66e7370998ed07754a12dcc1e0b0f5c7d59bc27"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/monitor.py",
+    "bytes": 2756,
+    "sha256": "269c4d005cfa435196ba659b505bd0a7fe8f032421ed4ec4d06b1e875a3227c0"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/native_stage.py",
+    "bytes": 3408,
+    "sha256": "bbcec4a03efa03912e6f044957b7d5beb8a1ea0794f32bc78dcd5a871eb25618"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/operator_step.py",
+    "bytes": 1747,
+    "sha256": "8d0f04001d3faa5bb7e7a57735637e6b77c97a338f41cb9dce100225332e8e47"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/policy_server.py",
+    "bytes": 6234,
+    "sha256": "076e406b1646e46a92e6ff191a9a16dafba43f3de6c89047b368fc711df8ccfc"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/probe_saved.py",
+    "bytes": 2249,
+    "sha256": "9edd7c9e0ab1b2a51a85cb272ec86c7af4afa7976391cca96fade6553aa19164"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/register_recovery.py",
+    "bytes": 8141,
+    "sha256": "9c8b28562c181e64e9148bc33f0a709cfa7f154b656be36bf121f98601bdb2a5"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/reset_state.py",
+    "bytes": 6141,
+    "sha256": "e2570d78492a5a646ea86dd7ef48358ef232fc0103bf1da61045ca93d50e949c"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/restore_commands.py",
+    "bytes": 17736,
+    "sha256": "eb12d1f6626eeb1bb49ce1aa1bde9c7bd4dd393bccb617d34c685c2b2230f0cf"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/restore_zero_action.py",
+    "bytes": 2616,
+    "sha256": "c107732906ad3ca61a8944a953ce7f5d48e79dc6db9c2aca45c82ce4780b9c71"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/servo_until.py",
+    "bytes": 3735,
+    "sha256": "3981c3181b5c5ce9f1fc64c66152dd6ea8aa2599039e65c574347ddc93049a8b"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/sim_tool.py",
+    "bytes": 24574,
+    "sha256": "934d688053f0b4c22fcb1d3c7ad5cce80490a3c551a87031dfed2299e80cdaf1"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/validate_geometry.py",
+    "bytes": 4018,
+    "sha256": "1fdb94d95de38761b871496bf8a4e4939caf802b8aed365c39a7d767afacfe0d"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/visible_circle.py",
+    "bytes": 4664,
+    "sha256": "5891385e92ca314ab38f2c4afae5d0b4a265bc3aa903382c3f9b36cbff3868d7"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/visible_plane.py",
+    "bytes": 2362,
+    "sha256": "3012ea208887883b3e8b205ff39b71ecdc31546c201148baf2a509ebe3a5e504"
+  },
+  {
+    "path": "code/work_dirs/robocasa365_agent/visible_topdown.py",
+    "bytes": 4088,
+    "sha256": "f0abd4d37c83311924b18f5d55601763a2c169278d8599247530c6b6f33bff2b"
+  },
+  {
+    "path": "pyproject.toml",
+    "bytes": 478,
+    "sha256": "eec00b541df97bcac0390a5943f0a479e6bc202df5024ed76cae3f99c84ee9e2"
+  },
+  {
+    "path": "sanitization_summary.json",
+    "bytes": 1204,
+    "sha256": "087ba29c6ecc0e465627029c725ab9543a634873af8e67dc72aadd12ff7ea9c0"
+  },
+  {
+    "path": "setup_env.sh",
+    "bytes": 730,
+    "sha256": "2fdb9ab77bfd0bd1d0f6f71297a65a6a6ad293228bef242c8456269304d33bb5"
+  },
+  {
+    "path": "skills/SandboxRSI/SKILL.md",
+    "bytes": 2146,
+    "sha256": "62679f98f0f74f78b8a3594a63ffbee82ea572b7bd423c3baf9a7bcee5602608"
+  },
+  {
+    "path": "skills/SandboxRSI/references/common-primitives.md",
+    "bytes": 64646,
+    "sha256": "33eadf2de05b6a39ed9fcf480a8ac421cdceeb81f5f12c5eeb34c802b913076a"
+  },
+  {
+    "path": "skills/SandboxRSI/references/evidence-format.md",
+    "bytes": 761,
+    "sha256": "14f0253a93d9d82eaec9eea8f6ba6550cb631c7f2b06e809a9dea0a8fdb35a19"
+  },
+  {
+    "path": "skills/SandboxRSI/references/original/observation-recovery.md",
+    "bytes": 7409,
+    "sha256": "bf7258c39a153ff101fb5ea8428ed0993f3242d95befdf70beec607a94e9a9f6"
+  },
+  {
+    "path": "skills/SandboxRSI/references/original/worldscape-skills-full.md",
+    "bytes": 378212,
+    "sha256": "1ed5f60d52f42a4e98fe72aaa562f2ba5a5029192d08464193f56f2286913b0a"
+  },
+  {
+    "path": "skills/SandboxRSI/references/pipeline.md",
+    "bytes": 1180,
+    "sha256": "988b30244f630d55f5b6585684151bc866b290d3411579b91e2507d5aeaf847b"
+  },
+  {
+    "path": "skills/SandboxRSI/references/reproduction.md",
+    "bytes": 1129,
+    "sha256": "0b2dd57f0398cc71d32b962791384e008c0893c82c4d5b8e1ff925af159324ca"
+  },
+  {
+    "path": "skills/SandboxRSI/references/task-index.md",
+    "bytes": 2051,
+    "sha256": "eed208a050e0e06dcb6ef37ede3b406011a7ddf5a7cf118e89ea36e153ee9ac8"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/align_blocks.md",
+    "bytes": 2834,
+    "sha256": "5f7508d4b4a26a26b63b314755f4060d944361362c183ee2e3efe953ad805326"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/arrange_largest_number.md",
+    "bytes": 770,
+    "sha256": "08d6f3764a08309d50dee86f9bd07605a28d69af0aa91b92c4359582aea47927"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/build_tower.md",
+    "bytes": 1614,
+    "sha256": "1c801c43af1028c0bb63bc2b5437664baed6e34b5191c23d68475a5b9e23fd0f"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/classify_objects.md",
+    "bytes": 1056,
+    "sha256": "9706740f2af5b9a530abca58344897b45272935458cc870a80e8ed09b8ff8f57"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/classify_objects_by_language.md",
+    "bytes": 1080,
+    "sha256": "cd860f2bc9d004b2f2a6373901c7e5d06c02cb319bd21c4773874b97779aa4ef"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/cover_blocks.md",
+    "bytes": 1276,
+    "sha256": "d070916cd58ab44b39327854a3c4a4e4a0ba20dff6fa185dad78bedb41a3d60d"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/deposit_coin.md",
+    "bytes": 4519,
+    "sha256": "122092706bcafbb606417e1e73f0b356f45b05ff81cf91280eaa249255ad013f"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/fasten_screws.md",
+    "bytes": 6255,
+    "sha256": "433d2029b8c1349ea07c4c8357aae8ae289a72f729dec087abc424ba9b0ddd3b"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/fill_egg_holder.md",
+    "bytes": 4460,
+    "sha256": "ba2a633d1855d22f073d4a487914f36472062d0f766d950675f34a339ecb4db1"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/fill_pen_holder.md",
+    "bytes": 7118,
+    "sha256": "0ed9fcc9cc20ea1f05865530c0808c2592a2361b8e107b1820fa60dd09e227a4"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/fold_clothes.md",
+    "bytes": 3607,
+    "sha256": "549907f398127bdcd27e6ca08f243fa8a0d0faaa210b57991dfb766ac500ece1"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/general_pickup.md",
+    "bytes": 13237,
+    "sha256": "15c8104bd933f4837c4b1c1f2ee33544fe76ee43c33fb7472e573442d49e29e7"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/hang_mugs.md",
+    "bytes": 2749,
+    "sha256": "25be77cd4d9f1428138e080fa0230ba26773dc202e02d54aba1c2c4bd726da18"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/imitate_sorting_sequence.md",
+    "bytes": 4816,
+    "sha256": "4c91e7e9e0f9e63ce423dbdc389bfb52720fa34e68b169a02081b47175b00036"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/insert_key.md",
+    "bytes": 9610,
+    "sha256": "8588bece274edb03153adc33a595a7b5635e9bc15fcebd6e6e31643e0469ad23"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/insert_tubes.md",
+    "bytes": 2492,
+    "sha256": "d5c0b699a27290cd65ad378fb82ceefdfd907791631ce68149a61f7ea255906e"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/make_kong.md",
+    "bytes": 3040,
+    "sha256": "877458f9eca802031f9f2108659be367bd53466148cac1617c55b90b63394f1d"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/make_toast.md",
+    "bytes": 7460,
+    "sha256": "1dc5a9078d278a7d366b44cfcf411ac3311503cfbe9e7d9b96a92aa48bb608af"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/match_and_pick_from_conveyor.md",
+    "bytes": 9399,
+    "sha256": "4e8e663676e0eb65507c21321affd83053d2e4caf974bd60aec7c709ddafdd62"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/organize_table.md",
+    "bytes": 3222,
+    "sha256": "aeb821658b464101ee3152a678c95e8152adad130c110ed6f05e7ebf54e3ef51"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/pack_objects_into_box.md",
+    "bytes": 1043,
+    "sha256": "5da0717a6b1265e76e3852e447257336212aac0082397b696cd2a43d84761964"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/pick_from_conveyor_by_image.md",
+    "bytes": 9392,
+    "sha256": "9885bd6d331b7c5fd60af92525e0d1c77232979e9eca64ac9dafcee19fd38ac2"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/play_Xylophone.md",
+    "bytes": 4344,
+    "sha256": "6981351d71d53da1cc2b2c72938489c8e92742e48e79b702834e855a125860c0"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/play_stacking_toy.md",
+    "bytes": 2046,
+    "sha256": "e14ff7b27198d7144f82f60487072292d7aea774511879f5076f9a7f73f08d53"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/play_tic_tac_toe.md",
+    "bytes": 2614,
+    "sha256": "a4036f232424f44d20361fb51f24115a5423273a6bddc85d83727426ec8534ec"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/plug_in_charger.md",
+    "bytes": 6451,
+    "sha256": "ec4d4124188493ed3cf81ea0c8a58aa23930e86b7a2f872db344ba478e03a589"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/pour_balls_into_vase.md",
+    "bytes": 4033,
+    "sha256": "fcf5cdf61914074ddf03fbb82f785cdb732bf48ef29cf746e8b4d27901d28ddb"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/pour_by_language.md",
+    "bytes": 8480,
+    "sha256": "3c925feb5def8b4df22ad1c9e0a7c972d3076fd4df9f355bcedccb7f99ab712a"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/pour_liquid_into_cup.md",
+    "bytes": 8809,
+    "sha256": "9a1765bcc2f8329af1cd3a22c57f0df14b064dc2927eeae4f0e10e32bab65b1f"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/press_by_number.md",
+    "bytes": 3622,
+    "sha256": "6d2e3296bc7182a15ce4f06748905f593a9d74566e0e70253afac9b9b84f2b20"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/push_T.md",
+    "bytes": 3067,
+    "sha256": "085b6c83e706f4ea6d7aa19b717520722ca46e48afdb03b1eefd13d060a58d31"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/put_bottles_into_dustbin.md",
+    "bytes": 822,
+    "sha256": "c7970a0eb8fd7a330dd2b16b2bd37c38d4fccdfc3098dd69c35b184fb2b8c096"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/solve_equation.md",
+    "bytes": 2637,
+    "sha256": "5b9cb08f1f4c94ceb8b18d7604057389658aa5fe1965dd9a85404b9c98b056c4"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/sort_nesting_dolls_by_size.md",
+    "bytes": 1167,
+    "sha256": "4e07a715d4bb240db0052f28e57200ab56a1521e839c0f77d26a343464164ef9"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/stack_blocks.md",
+    "bytes": 1693,
+    "sha256": "b280e96f9bba2c9e4e3e6a7e0b2301aa4cd4340f72165e0fc5ff040bbb17b988"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/stack_blocks_by_language.md",
+    "bytes": 2948,
+    "sha256": "ec543dfe6e749d066b1a81330e9d0a4934d2fd71e9f7ca4cdf4a0e1d639eee23"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/stack_bowls.md",
+    "bytes": 1710,
+    "sha256": "4e8d911ad51b48c3b261756c1aa06e877a0f20e47b28a41093916541f4323f1e"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/store_laptop_and_headphones.md",
+    "bytes": 1436,
+    "sha256": "f61cfce08566b56b84b6b75a7009f7f7b59ccba273a1f35b84325e3a4116688a"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/store_tools_in_toolbox.md",
+    "bytes": 2501,
+    "sha256": "7fc7005bb2d3902386ee814a66746adc81263f309096ccb7e6cce7274834cc71"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/swap_T.md",
+    "bytes": 830,
+    "sha256": "6777fccd4889eb808a8dd8b68b4e7242aaf47bd00d24b50579962803b0fef31c"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/swap_blocks.md",
+    "bytes": 1842,
+    "sha256": "b1393b3fe5b751492afff004124259ee7f9be719a2a0b7c3d3eb84ae35091b2f"
+  },
+  {
+    "path": "skills/SandboxRSI/references/tasks/sweep_blocks.md",
+    "bytes": 1341,
+    "sha256": "31ab41f1e42bffb730da38b54fc72985c54ac527372744b200ed0ce7d240920a"
+  },
+  {
+    "path": "skills/SandboxRSI/references/techniques.md",
+    "bytes": 2035,
+    "sha256": "d89f5fdef6e74869e8d6856478c112bf5965851417f63bd86c496f1515294278"
+  },
+  {
+    "path": "skills/SandboxRSI/scripts/inspect_episode.py",
+    "bytes": 2670,
+    "sha256": "734d77658b8869fbe7014473f9ce3fc5edaa33708ccdaeb65abd070946ac9498"
+  },
+  {
+    "path": "skills/SandboxRSI/scripts/prepare_sandbox.py",
+    "bytes": 5028,
+    "sha256": "c90e006efbef1638fff1ae4b5bc2e913dce509c6fbcb75ea289ae51723311235"
+  },
+  {
+    "path": "skills/SandboxRSI/scripts/run_prepared.py",
+    "bytes": 1235,
+    "sha256": "64cde32058c6ca09925b3c5a925720d822b677d44ee5b02c5300677add7e3e43"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/campaigns/robodojo_agent6_20261021/agent.py",
+    "bytes": 106106,
+    "sha256": "0b1c2b3735fca019fdc4341205e251ac03b9c50b237fa6120f449635267e3cd0"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/campaigns/robodojo_agent6_20261021/policy_bridge.py",
+    "bytes": 7674,
+    "sha256": "40e049a37e0cd314219539acf72b8843cd52b5275e2b79c8a3bd5c67fa062ad7"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/campaigns/robodojo_agent6_20261021/run_eval.py",
+    "bytes": 27338,
+    "sha256": "a5cd0a7aa87a0bea921714677334a41e047f72ff794de1550712ad25dc7d0307"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/campaigns/robodojo_agent6_20261021/sim_bridge.py",
+    "bytes": 19940,
+    "sha256": "9258d923b7f4e67ec69cfacbfe9383c53826c2171ad0324e9366d492670f7f73"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/campaigns/robodojo_astra_12case_20261022/agent.py",
+    "bytes": 161423,
+    "sha256": "a6d76e90a283fd2f31425feca31a376d46af660173116186f0cf080c90c8f2b2"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/campaigns/robodojo_astra_12case_20261022/astra_retry.py",
+    "bytes": 27983,
+    "sha256": "7c052fbccba789b7a9fc296bd230bb1c85f455237128cc26f66ecda9ffdf6f72"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/campaigns/robodojo_astra_12case_20261022/policy_bridge.py",
+    "bytes": 7674,
+    "sha256": "40e049a37e0cd314219539acf72b8843cd52b5275e2b79c8a3bd5c67fa062ad7"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/campaigns/robodojo_astra_12case_20261022/run_eval.py",
+    "bytes": 27338,
+    "sha256": "a5cd0a7aa87a0bea921714677334a41e047f72ff794de1550712ad25dc7d0307"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/campaigns/robodojo_astra_12case_20261022/sim_bridge.py",
+    "bytes": 19940,
+    "sha256": "9258d923b7f4e67ec69cfacbfe9383c53826c2171ad0324e9366d492670f7f73"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/campaigns/robodojo_astra_retry10_20261021/agent.py",
+    "bytes": 128030,
+    "sha256": "795cbfb7909b4cf9a499558f6225dbad5c25c8a6c41575905194b8fad3d9f581"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/campaigns/robodojo_astra_retry10_20261021/astra_retry.py",
+    "bytes": 26542,
+    "sha256": "f1cf6b59e18b805d3526a35bb2ef2cf9b841e991df6269ea5b4eb30f75b601f3"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/campaigns/robodojo_astra_retry10_20261021/policy_bridge.py",
+    "bytes": 7674,
+    "sha256": "40e049a37e0cd314219539acf72b8843cd52b5275e2b79c8a3bd5c67fa062ad7"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/campaigns/robodojo_astra_retry10_20261021/run_eval.py",
+    "bytes": 27338,
+    "sha256": "a5cd0a7aa87a0bea921714677334a41e047f72ff794de1550712ad25dc7d0307"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/campaigns/robodojo_astra_retry10_20261021/sim_bridge.py",
+    "bytes": 19940,
+    "sha256": "9258d923b7f4e67ec69cfacbfe9383c53826c2171ad0324e9366d492670f7f73"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/dependencies/X5A.urdf",
+    "bytes": 8934,
+    "sha256": "3b5f19e8cdfc9965f4ee5826802067c30d2dcbcbe29d897704e9cd99f2631663"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/dependencies/guidance.py",
+    "bytes": 15835,
+    "sha256": "4a41b1296ec1194e2f2372a9c9cf85d27ff2ed10532165b34dd76906945c665e"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/align_blocks.py",
+    "bytes": 1431,
+    "sha256": "c8597e96132cd7c9d30f3ae101f7bbe8ac28597b629599d75d442bbea4c6e74c"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/arrange_largest_number.py",
+    "bytes": 5038,
+    "sha256": "277acd20ae4345dc71267762e588b7b0343387c71685183890f044a4808b7a20"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/build_tower.py",
+    "bytes": 5526,
+    "sha256": "814cf6ffb459871e5cf49f4e127903dbfbc30926f33db71de0b84a71ab235d6e"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/classify_objects.py",
+    "bytes": 4361,
+    "sha256": "aef4333c088766375e21a928d53a9a93aaee285fecae41e22385acdc74dd11ac"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/classify_objects_by_language.py",
+    "bytes": 5578,
+    "sha256": "242a8f048f487eb174ef246be78613bbb5f153549ee11a2650412718cf3b36c9"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/cover_blocks.py",
+    "bytes": 7745,
+    "sha256": "9d14931b16842b93bea8abf9a07991a93a7e663b93c5fd1695108c8b922ab862"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/deposit_coin.py",
+    "bytes": 1762,
+    "sha256": "f9868ef827ec17b8db6c4650cc5d9a9e593d20d00ee822e2212ce229ec01fb61"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/fasten_screws.py",
+    "bytes": 2715,
+    "sha256": "2e187a28e33e44efb87baae6463b3ec35264ccd41e35c21a1be44f6361675185"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/fill_egg_holder.py",
+    "bytes": 3538,
+    "sha256": "506dfb772f8882ae53966e3580affde19c3c0f11591c78cc5f5b1d997ba04f7e"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/fill_pen_holder.py",
+    "bytes": 5354,
+    "sha256": "8706dce239487e078b21af0b95bcc5cd4eabdcdadcdcbc6400d6b138d982f1e6"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/fold_clothes.py",
+    "bytes": 7264,
+    "sha256": "ecea9c287d0579605330168e6f36734704fb14a6b1e5dec82b6f2ee3a56ec20a"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/general_pickup.py",
+    "bytes": 881,
+    "sha256": "1a9eef7fe518f9d2c6805ad1a8f97c1045fa83726f84b9c63f67ffdfabbc40a7"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/hang_mugs.py",
+    "bytes": 10143,
+    "sha256": "4bc6586bd87de030b9c580fea2a45e7977c3b6a4d75cf3c43b546d349d42e906"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/imitate_sorting_sequence.py",
+    "bytes": 10180,
+    "sha256": "fc45f5399f5565f5b7344879242a4676830ded3be6d67cd7358a42f940039985"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/insert_key.py",
+    "bytes": 2375,
+    "sha256": "9f2df319327458da48f6a4b41501d2e434ee2745d7ee55adcdafd898cf1cd0be"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/insert_tubes.py",
+    "bytes": 2937,
+    "sha256": "9a68795ddbd0b816ffd7627e673390ecd83594c0e9d374d4e3abf3435ad439e1"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/make_kong.py",
+    "bytes": 10464,
+    "sha256": "3b68ffda519cca39a6a2044277e7874bda765102cd652f6adfc1882389b692dd"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/make_toast.py",
+    "bytes": 3395,
+    "sha256": "1047f484a73d1f92304393879b51f87e33d661b6ad7937198352fe37a0d3233d"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/match_and_pick_from_conveyor.py",
+    "bytes": 983,
+    "sha256": "53110b8a0c971bd3ae8878bfb7d0dcd9626bd9b610d4e7fc91772313b435a5c0"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/organize_table.py",
+    "bytes": 4533,
+    "sha256": "9e3057e70b8ad0b8cb553be6dec00d2b71fada6f4087edcb38fc56508f572dbd"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/pack_objects_into_box.py",
+    "bytes": 9118,
+    "sha256": "84a1cf1dd5e166f36291130f9d8cb5dfe4b3f4732a46674bef6374a7ea2d66be"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/pick_from_conveyor_by_image.py",
+    "bytes": 1234,
+    "sha256": "a0d29576d0aab8232d2fd3ebcc8c510e81c70b4cc04602a5be3e99ee2275e01d"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/play_Xylophone.py",
+    "bytes": 6840,
+    "sha256": "b7a4b0bc0457bcf55d714ca1867476fc4aabc53084adfc78d3ff5d1437bf7847"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/play_stacking_toy.py",
+    "bytes": 3660,
+    "sha256": "23361329ee7efe330da1f1c241415205bafed2b6c082a913659d868a80d338c3"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/play_tic_tac_toe.py",
+    "bytes": 11609,
+    "sha256": "97f65d03175b93b0286c26eea17de1c373260a9d913d9c2789ad97670fb69c6a"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/plug_in_charger.py",
+    "bytes": 1217,
+    "sha256": "aaa59ade46dc54f430e1148e3f6fae487970cd29eb2c07b5ff7b4045edb831b6"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/pour_balls_into_vase.py",
+    "bytes": 1614,
+    "sha256": "eae388b93ec196c401f76bbab3b0119cb2164f90bece0225d4fb925d3f2b73ab"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/pour_by_language.py",
+    "bytes": 4286,
+    "sha256": "f7a15a7fca2c649a7918d68960ede27e667f409a339b668dd9876db890724cfb"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/pour_liquid_into_cup.py",
+    "bytes": 1611,
+    "sha256": "73f8c91b57c352fdc1e7ba3fe5354b3c10e4156d8e5ba777762ad0fa1aff5663"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/press_by_number.py",
+    "bytes": 2891,
+    "sha256": "006f969087c00c417a63875a9de153f698c52d1f1ca0caf0aa16076aa15059c5"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/push_T.py",
+    "bytes": 1297,
+    "sha256": "a01d753bc320ffbf492ccc29e5f7ab3b39e6c7d255cd25804db1934a30fa5b41"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/put_bottles_into_dustbin.py",
+    "bytes": 2295,
+    "sha256": "3ba6e19df0c5ff19ba961092f031ce14e91e72a9a4a5934eece6000a1ffa1c48"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/solve_equation.py",
+    "bytes": 6249,
+    "sha256": "e287a2f36b82b28e8ca7824f63b1b723b02972ea6dfc115ff32b2882729751f7"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/sort_nesting_dolls_by_size.py",
+    "bytes": 2295,
+    "sha256": "1838fa6b515bad3796895cb5c1883c6a42789b7dada5434765764600e70beb49"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/stack_blocks.py",
+    "bytes": 2558,
+    "sha256": "50bd388f9e47002966fbb0146742467a820295b8686e0f86379f0efbcfffcc1b"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/stack_blocks_by_language.py",
+    "bytes": 2313,
+    "sha256": "36a83925f35c7a4caac5add328dd35cb1d346bad833d3064f455d88221e7a41e"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/stack_bowls.py",
+    "bytes": 4645,
+    "sha256": "022c129ec3493183b1a26688a0402f5a00a1546ae011999e9c19f4c0029e2b7d"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/store_laptop_and_headphones.py",
+    "bytes": 3278,
+    "sha256": "2bee4e31f0594900629fe7f43266e16fecb310b152930ce51524507136809a92"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/store_tools_in_toolbox.py",
+    "bytes": 4692,
+    "sha256": "2969fc3eb171560b3c0bcea62b9f38b8b35f3aecc9bcc7085c3b1cec365b48fc"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/swap_T.py",
+    "bytes": 1545,
+    "sha256": "57fc289b3957caa454e1d8e005e3a57c973d6ab40121845c94799e61e4bfafdf"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/swap_blocks.py",
+    "bytes": 6258,
+    "sha256": "08ed24ae9dff27f4e5c850161a02f62ce237859c096d9b06a853a7890e0ad4ed"
+  },
+  {
+    "path": "skills/SandboxRSI/sources/native_tasks/sweep_blocks.py",
+    "bytes": 1743,
+    "sha256": "65786217e199c1e2b26ec8e2c232bf98ecb304a20939d0908fe12bc41e990614"
+  },
+  {
+    "path": "skills/libero-rgbd-vla-tools/SKILL.md",
+    "bytes": 3738,
+    "sha256": "b2b3b256398dd5a4fdde68ea7668cb885168fdeac5cc1e5e7ec2989f3415c2ea"
+  },
+  {
+    "path": "skills/libero-rgbd-vla-tools/references/observation-recovery.md",
+    "bytes": 7409,
+    "sha256": "bf7258c39a153ff101fb5ea8428ed0993f3242d95befdf70beec607a94e9a9f6"
+  },
+  {
+    "path": "skills/libero-rgbd-vla-tools/references/ttg-implementation.md",
+    "bytes": 22963,
+    "sha256": "eefb26d071fb264ac88ffaea936741356f0df428adf88fae6487b065822cdbc1"
+  },
+  {
+    "path": "skills/libero-rgbd-vla-tools/references/worldscape-skills-full.md",
+    "bytes": 378212,
+    "sha256": "1ed5f60d52f42a4e98fe72aaa562f2ba5a5029192d08464193f56f2286913b0a"
+  },
+  {
+    "path": "skills/robocasa365-agent/SKILL.md",
+    "bytes": 2490,
+    "sha256": "65d9cbaef4bd8a857d21de59ce7eafe526da538785ebb00ca739c906d469ff0d"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/arrange-bread-basket.md",
+    "bytes": 542,
+    "sha256": "cbb0298111e80d21af6b3509acd4903a747c39be4c0a5046ec0e11f25b35f229"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/arrange-tea.md",
+    "bytes": 469,
+    "sha256": "0332ca84ba3f7f61582a0b89c47e98883ff6380a3f37b8e7b644d3eeeb6d84c6"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/bread-selection.md",
+    "bytes": 445,
+    "sha256": "68a6c5d0c085968775a78e6a26da1ca8afc7d7feb88caa0a764c743c84d98c0f"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/categorize-condiments.md",
+    "bytes": 407,
+    "sha256": "c96553a15b968332c61fe54ef6cb8fdfaae9edc3be3e135459c72308b408e15b"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/close-fridge.md",
+    "bytes": 468,
+    "sha256": "86abfeaed256a007cf72fe7e9e9ac07c46515dcb37efd071776c640a287943b0"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/close-toaster-oven.md",
+    "bytes": 463,
+    "sha256": "108e75565d90ae9d9b11214d1d96da6fd4f061e6a9b25f3f46a8740e5f05e605"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/coffee-setup-mug.md",
+    "bytes": 609,
+    "sha256": "342b129dda33c880ef92b289e2741f7443096bed25fffef663193700ecc2fdc5"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/cutting-tool-selection.md",
+    "bytes": 409,
+    "sha256": "24d7196442c780d5ed0f4493d3eeb5599f4e01a227b95199837afeec0c1b0036"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/deliver-straw.md",
+    "bytes": 443,
+    "sha256": "8e91dec76a8911572f6742d43bb025d85fc64ad5bdfe7d6a0525b4b6da64002f"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/garnish-pancake.md",
+    "bytes": 427,
+    "sha256": "68893f8dc5572f2e5d2ff3ac84a9b1e08df31a8d20ae6cc596a5839bdce7d572"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/gather-tableware.md",
+    "bytes": 430,
+    "sha256": "2fc64dcfde6cc11783c15aa0db6bd629c2cb500a2972457c78b5c83cbf631e50"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/get-toasted-bread.md",
+    "bytes": 421,
+    "sha256": "750eeb25f26fbe6672c39bb4bfcd71c330e5b6056b417eea54fcc3e8890a847f"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/heat-kebab-sandwich.md",
+    "bytes": 466,
+    "sha256": "3034288efea0ada624c4ba20d6fa07497e620e4d38cbbe5d401d870b84abbd8b"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/make-ice-lemonade.md",
+    "bytes": 439,
+    "sha256": "e75114b7ac908412dd9beed587b07712522477531e2d8433143f86cb7f28a8cf"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/navigate-kitchen.md",
+    "bytes": 512,
+    "sha256": "3220d4cc1786f4ceb7f8dc858639f9d7df003b1e351c88ae40bc7460ad80bcc0"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/open-cabinet.md",
+    "bytes": 494,
+    "sha256": "5fbbf7fe11b7118feeeb482291de50e94fd4a36daed661a304a60df8894e304a"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/open-drawer.md",
+    "bytes": 499,
+    "sha256": "bcdff553ab2a7e39f1e4a72f6d99ec18d1fd10c04115835ff9720680841537bb"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/open-stand-mixer.md",
+    "bytes": 433,
+    "sha256": "0acecc288335d11740d4db55993f4f7ff579c630623ce657a9ac29e6ca8c644f"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/pan-transfer.md",
+    "bytes": 412,
+    "sha256": "737c9e231a16e17831dc3815454459746e4178fb0cf041b148a55f9068fe78ee"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/pick-place-counter-to-cabinet.md",
+    "bytes": 378,
+    "sha256": "e269773bb6b9c80bb260ffd6c9e0cc01ab2ab5b69bc13f97bd4f06ef9b461d1c"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/pick-place-counter-to-stove.md",
+    "bytes": 433,
+    "sha256": "4368a2e8b4b7bc2f6af14cee6c7ac206f40f4078c03a9dbcb4a72df4e99a5d96"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/pick-place-drawer-to-counter.md",
+    "bytes": 469,
+    "sha256": "97649bb3fbed42bb6709d8618c6eece324b070ee3a4f601982a614cc3b528169"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/portion-hot-dogs.md",
+    "bytes": 403,
+    "sha256": "52ce17c1006c64d1a57a1bd236ce5612ab4e59d5e7a40907d219f40e067d3ae5"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/recycle-bottles-by-type.md",
+    "bytes": 433,
+    "sha256": "ad5685a6153ab5c66064ee525f98ebff1ce81122a3f2fb0ac8d016ded602ca21"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/runtime-contract.md",
+    "bytes": 3743,
+    "sha256": "70d5b8c630e49e07c7d7b1861dfaee34dbf5b64a4326e6eb1ca0f81f68813ee4"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/separate-freezer-rack.md",
+    "bytes": 439,
+    "sha256": "b5396dd48485835993c1017a2262e8516e0a6c2a4a9cc9997aff4d5226baba79"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/waffle-reheat.md",
+    "bytes": 424,
+    "sha256": "af4fd2ea506667fee0a3affb47ab6e1583c2ded270d9037b383499ea8720d64f"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/wash-fruit-colander.md",
+    "bytes": 439,
+    "sha256": "d68c235d12a5b3e3576886cbda7cd5a2c942f24616f1ea1f5fa066f7421442bc"
+  },
+  {
+    "path": "skills/robocasa365-agent/references/weigh-ingredients.md",
+    "bytes": 423,
+    "sha256": "15271981faa6b1be9575667ba962bd90aaece63f79bab24293122f28efd14625"
+  },
+  {
+    "path": "tests/conftest.py",
+    "bytes": 188,
+    "sha256": "f3c9b12ae9f44d4a8b15b18001276fc98e21dc6fc09b37b7a5d88adea7a190d9"
+  },
+  {
+    "path": "tests/test_interactvla.py",
+    "bytes": 23722,
+    "sha256": "0190aa7bbd7f4a965fe81b566622c8e8d2a2f798c80e0bb01aa6a3240570a9f6"
+  }
+]

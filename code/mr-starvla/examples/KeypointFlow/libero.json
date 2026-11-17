@@ -1,0 +1,25 @@
+{
+  "horizon": 10,
+  "execute_prefix": 10,
+  "control_rate_hz": 20,
+  "guidance": {
+    "steps": 10,
+    "gain": 1.0,
+    "relative_cap": 0.3,
+    "active_start": 0.5,
+    "active_end": 0.8,
+    "checkpoints": [
+      0.6,
+      0.7
+    ],
+    "residual_scale": 1.0,
+    "demand_scale": 3.0,
+    "threshold": 0.36787944117144233
+  },
+  "budgets": {
+    "controller_steps": 1000,
+    "agent_calls": 64,
+    "duration_s": 50,
+    "wall_time": false
+  }
+}
